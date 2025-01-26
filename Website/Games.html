@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with Animated Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Games/CSS/style-games.css">
+  <link rel="stylesheet" href="./Games/CSS/mobile-responsive-games.css">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="logo">
+
+        <video autoplay loop muted class="animated-logo">
+          <source src="./About Us and Contact/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="login-signup">
+        <button data-tooltip="Existing Users">Login</button>
+        <button data-tooltip="New Users">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="navbar">
+      <div class="navbar-item" data-tooltip="Go to Home">
+        <a href="home.html">Home</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Learn more About Us & Contact">
+        <a href="About Us and Contact.html">About Us & Contact</a>
+
+      </div>
+      <div class="navbar-item" data-tooltip="Explore Upcoming Games">
+        <a href="Upcoming Games.html">Upcoming Games</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Shop Consoles & Gaming Peripherals">
+        <a href="consoles&gaming-peripherals.html">Consoles and Gaming Peripherals</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Discover New Games">
+        <a href="Games.html">Games</a></div>
+        <div class="navbar-item" data-tooltip="Find Queries & FAQ">
+            <a href="FAQ.html">Queries & FAQ</a>
+            </div>
+    </div>
+    <div class="burger-menu">
+      <button class="burger-icon">☰</button>
+      <div class="burger-list">
+        <button class="close">×</button>
+        <div class="burger-item" onclick="window.location.href='home.html'">Home</div>
+        <div class="burger-item" onclick="window.location.href='About Us and Contact.html'">About Us & Contact</div>
+        <div class="burger-item" onclick="window.location.href='Upcoming Games.html'">Upcoming Games</div>
+        <div class="burger-item" onclick="window.location.href='consoles&gaming-peripherals.html'">Consoles & Gaming Peripherals</div>
+        <div class="burger-item" onclick="window.location.href='Games.html'">Games</div>
+        <div class="burger-item" onclick="window.location.href='FAQ.html'">Queries & FAQ</div>
+      </div>
+    </div>
+    <div class="burger-overlay"></div>
+    
+  </nav>
+
+    
+  <div id="section-announcement">
+    <h1>Discover Your Next Adventure</h1>
+    <p>Explore thrilling games and prepare for an unforgettable experience!</p>
+  </div>
+
+  <section id="section">
+    <div class="search-bar">
+        <label for="search-input">Search for any games here</label>
+        <input type="text" placeholder="Type your search here...">
+    </div>
+  
+    <div class="title">Popular Games</div>
+  
+    <div class="game-grid">
+        <div class="game-box">
+            <img src="./Games/Images/fifa23.jpg" alt="FIFA 23">
+            <div class="genre">Sports</div>
+            <div class="game-info">
+                <h3>FIFA 23</h3>
+                <p>Release Date: September 30, 2022</p>
+                <p class="rating">Rating: 8.2/10</p>
+                <p class="description">FIFA 23 is the latest addition to the famous soccer video game series, featuring realistic gameplay and multiple game modes.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/Minecraft.jpg" alt="Minecraft">
+            <div class="genre">Sandbox</div>
+            <div class="game-info">
+                <h3>Minecraft</h3>
+                <p>Release Date: November 18, 2011</p>
+                <p class="rating">Rating: 9.7/10</p>
+                <p class="description">Minecraft is a sandbox game where players can build, explore, and survive in a pixelated, blocky world.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/gta5.jpg" alt="GTA 5">
+            <div class="genre">Action</div>
+            <div class="game-info">
+                <h3>GTA 5</h3>
+                <p>Release Date: September 17, 2013</p>
+                <p class="rating">Rating: 9.5/10</p>
+                <p class="description">GTA 5 is an open-world action game set in the fictional state of San Andreas, known for its gripping story and diverse gameplay.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/Red_Dead_Redemption.jpg" alt="Red Dead Redemption">
+            <div class="genre">Adventure</div>
+            <div class="game-info">
+                <h3>Red Dead Redemption</h3>
+                <p>Release Date: October 26, 2018</p>
+                <p class="rating">Rating: 9.8/10</p>
+                <p class="description">Red Dead Redemption is a western-themed action-adventure game that takes place in an expansive open-world environment.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/callofduty.jpg" alt="Call of Duty: Modern Warfare 1">
+            <div class="genre">Shooter</div>
+            <div class="game-info">
+                <h3>Call of Duty: Modern Warfare 1</h3>
+                <p>Release Date: October 25, 2019</p>
+                <p class="rating">Rating: 8.9/10</p>
+                <p class="description">Call of Duty: Modern Warfare 1 is a first-person shooter that focuses on intense military combat with a gripping single-player story and multiplayer modes.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/callofduty2.jpg" alt="Call of Duty: Modern Warfare 2">
+            <div class="genre">Shooter</div>
+            <div class="game-info">
+                <h3>Call of Duty: Modern Warfare 2</h3>
+                <p>Release Date: October 28, 2022</p>
+                <p class="rating">Rating: 8.5/10</p>
+                <p class="description">A direct sequel to Modern Warfare 1, this game continues the fight with new maps, weapons, and an exciting single-player campaign.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="Games/Images/codmoderwarfare3.jpg" alt="Call of Duty: Modern Warfare 3">
+            <div class="genre">Shooter</div>
+            <div class="game-info">
+                <h3>Call of Duty: Modern Warfare 3</h3>
+                <p>Release Date: November 8, 2011</p>
+                <p class="rating">Rating: 8.8/10</p>
+                <p class="description">Modern Warfare 3 is the third game in the Modern Warfare series and focuses on the continuing global conflict between military factions.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/codwarzone.jpg" alt="Call of Duty: Warzone">
+            <div class="genre">Battle Royale</div>
+            <div class="game-info">
+                <h3>Call of Duty: Warzone</h3>
+                <p>Release Date: March 10, 2020</p>
+                <p class="rating">Rating: 7.8/10</p>
+                <p class="description">A free-to-play battle royale game that pits players against each other in large open environments with survival gameplay mechanics.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/codblackops6.jpg" alt="Call of Duty: Black Ops 6">
+            <div class="genre">Shooter</div>
+            <div class="game-info">
+                <h3>Call of Duty: Black Ops 6</h3>
+                <p>Release Date: November 13, 2021</p>
+                <p class="rating">Rating: 8.4/10</p>
+                <p class="description">The Black Ops series continues with new characters, settings, and enhanced multiplayer modes for an action-packed experience.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/Fortnite.jpg" alt="Fortnite">
+            <div class="genre">Battle Royale</div>
+            <div class="game-info">
+                <h3>Fortnite</h3>
+                <p>Release Date: July 25, 2017</p>
+                <p class="rating">Rating: 8.0/10</p>
+                <p class="description">Fortnite is an online battle royale game where players fight to be the last one standing, with the ability to build structures for defense.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/Valorant.jpg" alt="Valorant">
+            <div class="genre">Shooter</div>
+            <div class="game-info">
+                <h3>Valorant</h3>
+                <p>Release Date: June 2, 2020</p>
+                <p class="rating">Rating: 8.7/10</p>
+                <p class="description">Valorant is a tactical first-person shooter featuring team-based gameplay with agents, each possessing unique abilities and weapons.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/pubg.jpg" alt="PUBG">
+            <div class="genre">Battle Royale</div>
+            <div class="game-info">
+                <h3>PUBG</h3>
+                <p>Release Date: December 20, 2017</p>
+                <p class="rating">Rating: 8.2/10</p>
+                <p class="description">PlayerUnknown's Battlegrounds is a popular battle royale game where players drop into an island and fight to survive against other players.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/elden.jpg" alt="Elden Ring">
+            <div class="genre">RPG</div>
+            <div class="game-info">
+                <h3>Elden Ring</h3>
+                <p>Release Date: February 25, 2022</p>
+                <p class="rating">Rating: 9.9/10</p>
+                <p class="description">Elden Ring is an action RPG set in a fantasy world where players explore vast lands, battle monsters, and uncover an epic storyline.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/witcher3.jpg" alt="Witcher 3">
+            <div class="genre">RPG</div>
+            <div class="game-info">
+                <h3>Witcher 3</h3>
+                <p>Release Date: May 19, 2015</p>
+                <p class="rating">Rating: 9.6/10</p>
+                <p class="description">The Witcher 3: Wild Hunt is an open-world RPG where players assume the role of Geralt of Rivia, hunting monsters and uncovering secrets.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/hogwarts.jpg" alt="Hogwarts Legacy">
+            <div class="genre">Adventure</div>
+            <div class="game-info">
+                <h3>Hogwarts Legacy</h3>
+                <p>Release Date: February 10, 2023</p>
+                <p class="rating">Rating: 9.2/10</p>
+                <p class="description">Hogwarts Legacy is an open-world RPG set in the Wizarding World where players take on the role of a student at Hogwarts, exploring magic and mystery.</p>
+            </div>
+        </div>
+    
+        <div class="game-box">
+            <img src="./Games/Images/legend_of_zelda.jpg" alt="Legend of Zelda">
+            <div class="genre">Adventure</div>
+            <div class="game-info">
+                <h3>Legend of Zelda</h3>
+                <p>Release Date: February 21, 1986</p>
+                <p class="rating">Rating: 9.5/10</p>
+                <p class="description">Embark on an epic adventure in the mystical world of Hyrule, solving puzzles and battling foes as the courageous hero, Link.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="animated-logo-footer">
+          <video autoplay loop muted class="logo">
+            <source src="./Upcoming Games/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+            <source src="./Upcoming Games/logo/GAMEFURYLOGO.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="gamefury-info">
+          To build a dynamic gaming community, offering top games, accessories and unforgettable experiences.
+        </p>
+        <div class="social-links">
+          <a href="https://facebook.com" class="social-icon"><img src="./Consoles and Gaming Peripherals/Footer/socials/Facebook-icon.png" alt="Facebook"></a>
+          <a href="https://twitter.com" class="social-icon"><img src="./Consoles and Gaming Peripherals/Footer/socials/twitter-icon.png" alt="Twitter"></a>
+          <a href="https://instagram.com" class="social-icon"><img src="./Consoles and Gaming Peripherals/Footer/socials/Instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <div class="footer-middle">
+        <div class="about-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="community-section">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="social-section">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://discord.com" target="_blank">Discord</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086212707761!2d144.9572287153185!3d-37.817334979751095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb1d5d7768f6d75e!2sFederation%20Square!5e0!3m2!1sen!2s!4v1614763784963!5m2!1sen!2s" 
+            width="430" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class="footer-line"></div>
+  
+    <div class="footer-info">
+      <div class="footer-lefts">
+        <p>@2025 GameFury | All rights reserved.</p>
+      </div>
+      <div class="footer-rights">
+        <a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="./Games/script.js"></script>
+</body>
+</html>

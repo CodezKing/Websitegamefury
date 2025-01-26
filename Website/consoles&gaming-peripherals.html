@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with Animated Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Consoles and Gaming Peripherals/CSS/style-consoles$gaming-peripherals.css">
+  <link rel="stylesheet" href="./Consoles and Gaming Peripherals/CSS/mobile-responsiveConsole.css">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="logo">
+        <video autoplay loop muted class="animated-logo">
+          <source src="./About Us and Contact/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="login-signup">
+        <button data-tooltip="Existing Users">Login</button>
+        <button data-tooltip="New Users">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="navbar">
+      <div class="navbar-item" data-tooltip="Go to Home">
+        <a href="home.html">Home</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Learn more About Us & Contact">
+        <a href="About Us and Contact.html">About Us & Contact</a>
+
+      </div>
+      <div class="navbar-item" data-tooltip="Explore Upcoming Games">
+        <a href="Upcoming Games.html">Upcoming Games</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Shop Consoles & Gaming Peripherals">
+        <a href="consoles&gaming-peripherals.html">Consoles and Gaming Peripherals</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Discover New Games">
+        <a href="Games.html">Games</a></div>
+      <div class="navbar-item" data-tooltip="Find Queries & FAQ">
+        <a href="FAQ.html">Queries & FAQ</a></div>
+    </div>
+      
+    <div class="burger-menu">
+      <button class="burger-icon">☰</button>
+      <div class="burger-list">
+        <button class="close">×</button>
+        <div class="burger-item" onclick="window.location.href='home.html'">Home</div>
+        <div class="burger-item" onclick="window.location.href='About Us and Contact.html'">About Us & Contact</div>
+        <div class="burger-item" onclick="window.location.href='Upcoming Games.html'">Upcoming Games</div>
+        <div class="burger-item" onclick="window.location.href='consoles&gaming-peripherals.html'">Consoles & Gaming Peripherals</div>
+        <div class="burger-item" onclick="window.location.href='Games.html'">Games</div>
+        <div class="burger-item" onclick="window.location.href='FAQ.html'">Queries & FAQ</div>
+      </div>
+    </div>
+    <div class="burger-overlay"></div>
+  </nav>
+  <div id="section-announcement">
+    <h1>Welcome to our Store</h1>
+    <p>Discover a wide range of consoles and gaming peripherals</p>
+  </div>
+
+  <section id="section-products">
+    <h2 class="section-title">Popular Consoles</h2>
+    <div class="grid-row">
+        <div class="box">
+            <div class="label">Highest rated</div>
+            <img src="./Consoles and Gaming Peripherals/Images/ps5.jpg" alt="PlayStation 5">
+            <h3>PlayStation 5</h3>
+            <p class="price">$499</p>
+        </div>
+
+        <div class="box">
+          <div class="label">New Arrival</div>
+            <img src="./Consoles and Gaming Peripherals/Images/switch2.jpg" alt="Switch 2">
+            <h3>Switch 2</h3>
+            <p class="price">$400</p>
+        </div>
+
+        <div class="box">
+            <div class="label">Top Seller</div>
+            <img src="./Consoles and Gaming Peripherals/Images/xbox.jpg" alt="Xbox Series X">
+            <h3>Xbox Series X</h3>
+            <p class="price">$530</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Featured Peripherals</h2>
+    <div class="grid-row-4 center-section">
+        <div class="box">
+            <img src="./Consoles and Gaming Peripherals/Images/keyboard.jpg" alt="Mechanical Keyboard">
+            <h3>Ducky One 3 Classic Black Mini Mechanical Keyboard</h3>
+            <p class="price">$100</p>
+        </div>
+        <div class="box">
+            <img src="./Consoles and Gaming Peripherals/Images/headset.jpg" alt="Wireless Gaming Headset">
+            <h3>HyperX Stinger 2 Wired Gaming Headset</h3>
+            <p class="price">$99.99</p>
+        </div>
+        <div class="box">
+            <img src="./Consoles and Gaming Peripherals/Images/gamingbuds.jpg" alt="Gamebuds">
+            <h3>Logitech G333 Gaming Earphones with Mic</h3>
+            <p class="price">$20</p>
+        </div>
+        <div class="box">
+            <img src="./Consoles and Gaming Peripherals/Images/monitor.jpg" alt="Gaming Chair">
+            <h3>MSI MPG 321URX QD-OLED Gaming Monitor, 3840 x 2160, 0.03ms, 240Hz</h3>
+            <p class="price">$800</p>
+        </div>
+    </div>
+
+      <div class="grid-row grid-row-4">
+          <div class="box">
+              <img src="./Consoles and Gaming Peripherals/Images/razer.jpg" alt="Razer Viper V3 Pro">
+              <h3>Razer Viper V3 Pro White</h3>
+              <p class="price">$144</p>
+          </div>
+          <div class="box">
+              <img src="./Consoles and Gaming Peripherals/Images/audeze.jpg" alt="Audeze Maxwell Wireless Gaming Headset">
+              <h3>Audeze Maxwell Wireless Gaming Headset</h3>
+              <p class="price">$199</p>
+          </div>
+          <div class="box">
+              <img src="./Consoles and Gaming Peripherals/Images/dualsense.jpg" alt="DualSense Edge Wireless Controller">
+              <h3>DualSense Edge™ Wireless Controller</h3>
+              <p class="price">$199.99</p>
+          </div>
+          <div class="box">
+              <img src="./Consoles and Gaming Peripherals/Images/corsair.jpg" alt="Corsair TC100 Relaxed Gaming Chair">
+              <h3>Corsair TC100 Relaxed Gaming Chair</h3>
+              <p class="price">$150</p>
+          </div>
+      </div>
+
+      <hr>
+
+      <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="./Consoles and Gaming Peripherals/slidingImages/Sony-PS5-Accessories.jpg" alt="Image 1" class="carousel-item" />
+                <img src="./Consoles and Gaming Peripherals/slidingImages/gamingsetup.jpg" alt="Image 2" class="carousel-item" />
+                <img src="./Consoles and Gaming Peripherals/slidingImages/xbox.jpg" alt="Image 3" class="carousel-item" />
+                <img src="./Consoles and Gaming Peripherals/slidingImages/gamingsetup2.jpg" alt="Image 4" class="carousel-item" />
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-arrow left" aria-label="Previous Image">
+                    <img src="./Consoles and Gaming Peripherals/slidingImages/left-arrow.png" alt="Previous" />
+                </button>
+                <button class="carousel-arrow right" aria-label="Next Image">
+                    <img src="./Consoles and Gaming Peripherals/slidingImages/right-arrow.png" alt="Next" />
+                </button>
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <div class="dot" aria-label="Image 1"></div>
+            <div class="dot" aria-label="Image 2"></div>
+            <div class="dot" aria-label="Image 3"></div>
+            <div class="dot" aria-label="Image 4"></div>
+        </div>
+        <button class="auto-scroll-toggle">Toggle Auto-Scroll</button>
+    </div>
+    
+</section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="animated-logo-footer">
+          <video autoplay loop muted class="logo">
+            <source src="./Upcoming Games/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+            <source src="./Upcoming Games/logo/GAMEFURYLOGO.webm" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="gamefury-info">
+          To build a dynamic gaming community, offering top games, accessories and unforgettable experiences.
+        </p>
+        <div class="social-links">
+          <a href="https://facebook.com" class="social-icon"><img src="./Consoles and Gaming Peripherals/Footer/socials/Facebook-icon.png" alt="Facebook"></a>
+          <a href="https://twitter.com" class="social-icon"><img src="./Consoles and Gaming Peripherals/Footer/socials/twitter-icon.png" alt="Twitter"></a>
+          <a href="https://instagram.com" class="social-icon"><img src="./Consoles and Gaming Peripherals/Footer/socials/Instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <div class="footer-middle">
+        <div class="about-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="community-section">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="social-section">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://discord.com" target="_blank">Discord</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086212707761!2d144.9572287153185!3d-37.817334979751095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb1d5d7768f6d75e!2sFederation%20Square!5e0!3m2!1sen!2s!4v1614763784963!5m2!1sen!2s" 
+            width="430" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class="footer-line"></div>
+  
+    <div class="footer-info">
+      <div class="footer-lefts">
+        <p>@2025 GameFury | All rights reserved.</p>
+      </div>
+      <div class="footer-rights">
+        <a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <script src="./Consoles and Gaming Peripherals/script.js"></script>
+</body>
+</html>

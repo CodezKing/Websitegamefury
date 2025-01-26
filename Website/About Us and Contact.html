@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with Animated Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./About Us and Contact/Styling/style-About.css">
+  <link rel="stylesheet" href="./About Us and Contact/Styling/mobile-responsive-About.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-row">
+      <div class="logo">
+      
+        <video autoplay loop muted class="animated-logo">
+          <source src="./About Us and Contact/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="login-signup">
+        <button data-tooltip="Existing Users">Login</button>
+        <button data-tooltip="New Users">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+
+  <nav>
+    <div class="navbar">
+      <div class="navbar-item" data-tooltip="Go to Home">
+        <a href="home.html">Home</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Learn more About Us & Contact">
+        <a href="About Us and Contact.html">About Us & Contact</a>
+
+      </div>
+      <div class="navbar-item" data-tooltip="Explore Upcoming Games">
+        <a href="Upcoming Games.html">Upcoming Games</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Shop Consoles & Gaming Peripherals">
+        <a href="consoles&gaming-peripherals.html">Consoles and Gaming Peripherals</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Discover New Games">
+        <a href="Games.html">Games</a></div>
+        <div class="navbar-item" data-tooltip="Find Queries & FAQ">
+          <a href="FAQ.html">Queries & FAQ</a>
+      </div>
+      
+    </div>
+
+    <div class="burger-menu">
+      <button class="burger-icon">☰</button>
+      <div class="burger-list">
+        <button class="close">×</button>
+        <div class="burger-item" onclick="window.location.href='home.html'">Home</div>
+        <div class="burger-item" onclick="window.location.href='About Us and Contact.html'">About Us & Contact</div>
+        <div class="burger-item" onclick="window.location.href='Upcoming Games.html'">Upcoming Games</div>
+        <div class="burger-item" onclick="window.location.href='consoles&gaming-peripherals.html'">Consoles & Gaming Peripherals</div>
+        <div class="burger-item" onclick="window.location.href='Games.html'">Games</div>
+        <div class="burger-item" onclick="window.location.href='FAQ.html'">Queries & FAQ</div>
+      </div>
+    </div>
+    <div class="burger-overlay"></div>
+  </nav>
+  
+  <section id="section1">
+    <div class="container">
+      <div class="left">
+        <h1>About Us</h1>
+        <p>
+          Welcome to GameFury, your ultimate gaming destination! Founded by Ahamed Rimaz, our store offers a wide variety of games, gaming accessories, and expert services. With branches in Downtown, Midtown, and Uptown, we cater to gamers of all types. Our dedicated team of expert coders and gamers ensures that you get top-notch products and knowledge. We're also proud to be a leading eSports organization, hosting tournaments and events that bring together the best talent in the gaming community. Whether you're here to shop or compete, GameFury is where passion and skill collide!
+        </p>
+        <div class="social-icons">
+          <a href="#" class="icon facebook">Facebook</a>
+          <a href="#" class="icon twitter">Twitter</a>
+          <a href="#" class="icon instagram">Instagram</a>
+          <a href="#" class="icon discord">Discord</a>
+        </div>
+        
+      </div>
+      <div class="right">
+        <img src="./About Us and Contact/image1.jpg" alt="GameFury Image">
+      </div>
+    </div>
+  </section>
+
+  
+<section id="section2" class="uptown-branch">
+  <div class="branch-title">
+    <h1>Uptown Branch</h1>
+    <p>Our Uptown store is perfect for high-end gamers, featuring the latest in gaming accessories and exclusive pre-orders. Stop by for premium gear and expert advice.</p>
+  </div>
+
+  <div class="branch-content">
+    <div class="map-box">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509359!2d-122.4194156846812!3d37.77492977975906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818f74b0cb1d%3A0x3c6f8507a3e29123!2s123%20Main%20Street!5e0!3m2!1sen!2sus!4v1617890139447!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="image-box">
+
+      <img src="./About Us and Contact/image2.jpg" alt="Downtown Branch" />
+    </div>
+  </div>
+
+  <div class="branch-info">
+    <hr />
+    <div class="info-group">
+      <h3>Address:</h3>
+      <p>789 Park Bolevard, Uptown city, UC 11223</p>
+    </div>
+    <div class="info-group">
+      <h3>Phone:</h3>
+      <p>(123) 456-5453</p>
+    </div>
+    <div class="info-group">
+      <h3>Email:</h3>
+      <p>uptowntown@gamefury.com</p>
+    </div>
+    <div class="info-group">
+      <h3>Opening Hours:</h3>
+      <p>8:AM - 10:PM, 7 days a week</p>
+    </div>
+  </div>
+</section>
+<section id="section3" class="midtown-branch">
+  <div class="branch-title">
+    <h1>Midtown Branch</h1>
+    <p>Visit our Midtown branch for a diverse selection of games, gaming consoles, and accessories. Enjoy comfortable seating and test out new releases before you buy.</p>
+  </div>
+
+  <div class="branch-content">
+    <div class="map-box">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509359!2d-122.4194156846812!3d37.77492977975906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818f74b0cb1d%3A0x3c6f8507a3e29123!2s456%20Market%20Avenue%2C%20Midtown%20City%2C%20MC%2067890!5e0!3m2!1sen!2sus!4v1617890139447!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="image-box">
+
+      <img src="./About Us and Contact/image3.jpg" alt="Midtown Branch" />
+    </div>
+  </div>
+
+  <div class="branch-info">
+    <hr />
+    <div class="info-group">
+      <h3>Address:</h3>
+      <p>456 Market Avenue, Midtown City, MC 67890</p>
+    </div>
+    <div class="info-group">
+      <h3>Phone:</h3>
+      <p>(234) 344-5454</p>
+    </div>
+    <div class="info-group">
+      <h3>Email:</h3>
+      <p>midtown@gamefury.com</p>
+    </div>
+    <div class="info-group">
+      <h3>Opening Hours:</h3>
+      <p>10:00 AM - 8:00 PM, 7 days a week</p>
+    </div>
+  </div>
+</section>
+<section id="section4" class="downtown-branch">
+  <div class="branch-title">
+    <h1>Downtown Branch</h1>
+    <p>Our downtown branch offers the latest games and accessories with expert staff ready to assist. Enjoy in-store events, gaming tournaments, and exclusive merchandise</p>
+  </div>
+
+  <div class="branch-content">
+    <div class="map-box">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509359!2d-122.4194156846812!3d37.77492977975906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818f74b0cb1d%3A0x3c6f8507a3e29123!2s456%20Market%20Avenue%2C%20Midtown%20City%2C%20MC%2067890!5e0!3m2!1sen!2sus!4v1617890139447!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="image-box">
+
+      <img src="./About Us and Contact/image4.jpg" alt="Midtown Branch" />
+    </div>
+  </div>
+
+  <div class="branch-info">
+    <hr />
+    <div class="info-group">
+      <h3>Address:</h3>
+      <p>123 Main Street, Downtown City, <br> DC 12345 a week</br></p>
+    </div>
+    <div class="info-group">
+      <h3>Phone:</h3>
+      <p>(234) 534-7473</p>
+    </div>
+    <div class="info-group">
+      <h3>Email:</h3>
+      <p>downtown@gamefury.com</p>
+    </div>
+    <div class="info-group">
+      <h3>Opening Hours:</h3>
+      <p>9:00 AM - 9:00 PM, 7 days a week</p>
+    </div>
+  </div>
+</section>
+
+  
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-left">
+
+        <div class="animated-logo-footer">
+          <video autoplay loop muted class="logo">
+            <source src="./About Us and Contact/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+            <source src="./About Us and Contact/logo/GAMEFURYLOGO.mp4" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="gamefury-info">
+          To build a dynamic gaming community, offering top games, accessories and unforgettable experiences.
+        </p>
+        <div class="social-links">
+          <a href="https://facebook.com" class="social-icon"><img src="./About Us and Contact/Footer/socials/Facebook-icon.png" alt="Facebook"></a>
+          <a href="https://twitter.com" class="social-icon"><img src="./About Us and Contact/Footer/socials/twitter-icon.png" alt="Twitter"></a>
+          <a href="https://instagram.com" class="social-icon"><img src="./About Us and Contact/Footer/socials/Instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+  
+
+      <div class="footer-middle">
+        <div class="about-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="community-section">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="social-section">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://discord.com" target="_blank">Discord</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086212707761!2d144.9572287153185!3d-37.817334979751095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb1d5d7768f6d75e!2sFederation%20Square!5e0!3m2!1sen!2s!4v1614763784963!5m2!1sen!2s" 
+            width="430" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  
+
+    <div class="footer-line"></div>
+  
+
+    <div class="footer-info">
+      <div class="footer-lefts">
+        <p>@2025 GameFury | All rights reserved.</p>
+      </div>
+      <div class="footer-rights">
+        <a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="./About Us and Contact/script.js"></script>
+</body>
+</html>

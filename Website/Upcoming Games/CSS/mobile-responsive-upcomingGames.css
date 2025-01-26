@@ -1,0 +1,487 @@
+@media (max-width: 768px) {
+  body, html {
+      overflow-x: hidden;
+      width: 100%;
+  }
+
+  .header-row, .logo, .search-bar input, .login-signup, .navbar, .burger-menu {
+      max-width: 100%;
+  }
+
+  .logo img {
+      height: 5rem;
+      margin-bottom: 0.5rem;
+      margin-top: -1rem;
+      max-width: 100%;
+  }
+
+  .header-row {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+  }
+
+  .logo {
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
+  }
+
+  .animated-logo {
+      max-height: 12rem;
+      max-width: 100%;
+      object-fit: contain;
+  }
+
+  .search-bar {
+      order: 1;
+      width: 100%;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+  }
+
+  .search-bar input {
+      width: 90%;
+      font-size: 0.9rem;
+  }
+
+  .login-signup {
+      order: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1rem;
+      width: 80%;
+  }
+
+  .login-signup button {
+      width: 48%;
+      margin-left: 0;
+      margin-top: 0;
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+  }
+
+  .search-bar input {
+      width: 90%;
+  }
+
+  .login-signup button {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+  }
+
+  .header-row {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 1rem;
+  }
+
+  .logo img {
+      height: 4rem;
+      margin-bottom: 0.5rem;
+      margin-top: -1rem;
+  }
+
+  .search-bar input {
+      width: 80%;
+      margin-top: 1rem;
+  }
+
+  .login-signup {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1rem;
+  }
+
+  .navbar {
+      display: none;
+  }
+
+  .burger-menu {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1100;
+  }
+
+  .burger-icon {
+      font-size: 2rem;
+      color: white;
+      cursor: pointer;
+      background: none;
+      border: none;
+      transition: transform 0.3s ease;
+  }
+
+  .burger-list {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 300px;
+      height: 100%;
+      background-color: #333;
+      color: white;
+      padding: 2rem 1rem;
+      box-shadow: -4px 0px 15px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      padding-top: 5rem;
+      transition: right 0.5s ease;
+  }
+
+  .burger-list.active {
+      display: block;
+      right: 0;
+  }
+
+  .burger-item {
+      padding: 1.2rem;
+      text-align: left;
+      cursor: pointer;
+      border-bottom: 1px solid #444;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  .burger-item:hover {
+      background-color: #555;
+      transform: scale(1.05);
+  }
+
+  .burger-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      display: none;
+      transition: opacity 0.3s ease;
+  }
+
+  .burger-overlay.active {
+      display: block;
+      opacity: 1;
+  }
+
+  .close {
+      color: white;
+      font-size: 2.5rem;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0.5rem;
+      z-index: 1101;
+  }
+
+  .burger-icon.open {
+      transform: rotate(45deg);
+  }
+
+  .burger-icon.close {
+      transform: rotate(0deg);
+  }
+  
+  #section-announcement h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#section-announcement p {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+  #upcoming-games .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  #upcoming-games img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  #upcoming-games h1 {
+      color: #333;
+      text-wrap: nowrap;
+  }
+
+  #upcoming-events .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  #upcoming-events img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  #upcoming-events h1 {
+      color: #333;
+      text-wrap: nowrap;
+  }
+
+  #upcoming-events {
+      font-family: "Russo one", Arial, sans-serif;
+      padding: 20px;
+  }
+
+  #upcoming-events .events-row {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  #upcoming-events .event-box {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  #upcoming-events .event-box h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  #upcoming-events .event-box p {
+      font-size: 16px;
+      line-height: 1.5;
+  }
+
+  
+ 
+  
+
+  #subscribe-section .subscribe-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .subscribe-left {
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .subscribe-right input, .subscribe-right button {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .subscribe-right button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .subscribe-right button:hover {
+    background-color: #0056b3;
+  }
+  
+  .subscribe-left h2 {
+    font-size: 20px;
+  }
+  
+  .subscribe-left p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .animated-logo-footer {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .logo {
+    width: 100%;
+    height: auto;
+  }
+  
+  .gamefury-info {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .social-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icon img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer-middle {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .footer-middle div {
+    width: 32%;
+    text-align: center;
+  }
+  
+  .footer-middle h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .footer-middle ul {
+    list-style-type: none;
+  }
+  
+  .footer-middle ul li {
+    margin: 5px 0;
+  }
+  
+  .footer-middle ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-right {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .footer-right .map {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-right .map iframe {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .footer-line {
+    margin: 20px 0;
+    border-top: 1px solid #444;
+  }
+  
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .footer-lefts {
+    margin-bottom: 10px;
+  }
+  
+  .footer-rights {
+    margin-top: 10px;
+  }
+  
+  .footer-rights a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-rights a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer-middle {
+      flex-direction: row;
+      gap: 15px;
+      justify-content: space-between;
+    }
+  
+    .footer-middle .about-section,
+    .footer-middle .community-section,
+    .footer-middle .social-section {
+      width: 32%;
+      text-align: center;
+    }
+  
+    .footer-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-lefts {
+      margin-bottom: 10px;
+    }
+  
+    .footer-rights {
+      margin-top: 10px;
+    }
+  
+    .footer-line {
+      margin-top: 30px;
+    }
+  }
+}  

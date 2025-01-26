@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with Animated Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Home/Styling/style.css">
+  <link rel="stylesheet" href="./Home/Styling/mobile-responsive.css">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="logo">
+        <video autoplay loop muted class="animated-logo">
+          <source src="./About Us and Contact/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="login-signup">
+        <button data-tooltip="Existing Users">Login</button>
+        <button data-tooltip="New Users">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+
+  <nav>
+    <div class="navbar">
+      <div class="navbar-item" data-tooltip="Go to Home">
+        <a href="home.html">Home</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Learn more About Us & Contact">
+        <a href="About Us and Contact.html">About Us & Contact</a>
+
+      </div>
+      <div class="navbar-item" data-tooltip="Explore Upcoming Games">
+        <a href="Upcoming Games.html">Upcoming Games</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Shop Consoles & Gaming Peripherals">
+        <a href="consoles&gaming-peripherals.html">Consoles and Gaming Peripherals</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Discover New Games">
+        <a href="Games.html">Games</a></div>
+      <div class="navbar-item" data-tooltip="Find Queries & FAQ">
+        <a href="FAQ.html">Queries & FAQ</a></div>
+      </div>
+    
+    <div class="burger-menu">
+      <button class="burger-icon">☰</button>
+      <div class="burger-list">
+        <button class="close">×</button>
+        <div class="burger-item" onclick="window.location.href='home.html'">Home</div>
+        <div class="burger-item" onclick="window.location.href='About Us and Contact.html'">About Us & Contact</div>
+        <div class="burger-item" onclick="window.location.href='Upcoming Games.html'">Upcoming Games</div>
+        <div class="burger-item" onclick="window.location.href='consoles&gaming-peripherals.html'">Consoles & Gaming Peripherals</div>
+        <div class="burger-item" onclick="window.location.href='Games.html'">Games</div>
+        <div class="burger-item" onclick="window.location.href='FAQ.html'">Queries & FAQ</div>
+      </div>
+    </div>
+    <div class="burger-overlay"></div>
+  </nav>
+
+  <div class="video-section">
+    <video autoplay loop muted class="desktop-video">
+      <source src="./Home/Home video/Welcome.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay loop muted class="mobile-video">
+      <source src="./Home/Home video/Welcome-mobile.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <section class="home-section">
+    <h1>Welcome to our Gaming Store</h1>
+    <div class="main-content">
+      <div class="left">
+        <img src="./Home/Section1/Image1.jpg" alt="Gaming Store Image">
+      </div>
+      <div class="right">
+        <p>At Game Fury, we pride ourselves on delivering an unparalleled gaming experience. With an extensive collection of the latest games, consoles, and accessories, we are dedicated to meeting the needs of gamers everywhere. Whether you're a casual player or a hardcore enthusiast, Game Fury provides top-quality products backed by exceptional customer service.
+
+          Our team is passionate about gaming and always ready to assist you in finding the perfect match for your gaming setup. From offering expert advice on the newest releases to providing tech support, we go the extra mile to ensure that your gaming experience is nothing short of amazing.
+          
+          At Game Fury, we don't just sell games — we build lasting relationships with our customers. Come experience the excitement, innovation, and dedication that makes us the ultimate destination for all your gaming needs.</p>
+      </div>
+    </div>
+    <div class="info-boxes">
+      <div class="box left-box">
+        <div class="box-content">
+          <img src="./Home/Section1/Mission.jpg" alt="Our Mission Image">
+          <div class="box-text">
+            <h3>Our Mission</h3>
+            <p>To deliver high-quality gaming products that satisfy our customers' needs.</p>
+            <div class="tags">
+              <span>Quality</span>
+              <span>Innovation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box right-box">
+        <div class="box-content">
+          <img src="./Home/Section1/Team.jpg" alt="Our Team Image">
+          <div class="box-text">
+            <h3>Our Team</h3>
+            <p>Our team is passionate, dedicated, and knowledgeable in the gaming world.</p>
+            <div class="tags">
+              <span>Dedicated</span>
+              <span>Knowledgeable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="upcoming-trending">
+    <h1 class="main-title">Upcoming and Trending Games</h1>
+    
+    <div class="content">
+      <div class="left-content">
+        <p class="store-description">
+          Welcome to our store, featuring a curated selection of the most popular games. Whether you're looking for the latest releases or timeless classics, we've got something for every gamer.
+        </p>
+  
+        <div class="games-lists">
+          <div class="upcoming-games">
+            <h2>Upcoming Games</h2>
+            <ol>
+              <li>Dynasty Warriors Origin</li>
+              <li>Civilization 7</li>
+              <li>Kingdom Come Deliverance 2</li>
+              <li>Assassin's Creed Shadows</li>
+              <li>Avowed</li>
+              <li>Monster Hunt Wilds</li>
+              <li>Fatal Fury: City of Wolves</li>
+              <li>GTA 6</li>
+            </ol>
+          </div>
+  
+          <div class="trending-games">
+            <h2>Trending Games</h2>
+            <ol>
+              <li>FIFA 23</li>
+              <li>GTA 5</li>
+              <li>Call of Duty Modern Warfare II/III/Warzone/Black Ops 6</li>
+              <li>Minecraft</li>
+              <li>Red Dead Redemption 2</li>
+            </ol>
+          </div>
+        </div>
+  
+        <p class="more-text">And more...</p>
+      </div>
+      <div class="right-content">
+        <div class="image-slider">
+          <img src="./Home/Section2/GameSlideshow/GTA6.jpg" alt="GTA6" class="slide">
+          <img src="./Home/Section2/GameSlideshow/Kingdom.jpg" alt="Kingdom" class="slide">
+          <img src="./Home/Section2/GameSlideshow/Dynasty.jpg" alt="Dynasty" class="slide">
+          <img src="./Home/Section2/GameSlideshow/Civilization7.png" alt="Civilization7" class="slide">
+        </div>
+      </div>
+    </div>
+    </section>
+    <section class="section3">
+    <div class="grid-container">
+      <div class="title">Top of the Line Consoles and Gaming Peripherals</div>
+
+      <div class="slideshow">
+          <img src="./Home/Section3/GameSlideshow2/gamingsetup.jpg" alt="Gaming Image 1">
+          <img src="./Home/Section3/GameSlideshow2/Keyboard, Mice, Headeset.jpg" alt="Gaming Image 2">
+          <img src="./Home/Section3/GameSlideshow2/PS5.jpg" alt="Gaming Image 3">
+          <img src="./Home/Section3/GameSlideshow2/Xbox.jpg" alt="Gaming Image 4">
+      </div>
+
+      <div class="cta">Don't miss out on our exclusive range of consoles and gaming peripherals. Check out our products and elevate your gaming experience today!</div>
+
+      <div class="offer">
+          <div class="offer-title">We Offer</div>
+          <ul class="offer-list">
+              <li>PS5</li>
+              <li>Mouse and Keyboards</li>
+              <li>XBOX</li>
+              <li>Nintendo Switch</li>
+          </ul>
+      </div>
+  </div>
+  </section>
+  <section class="customer-reviews">
+    <div class="header">
+      <h2>Customer Reviews</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-box">
+        <div class="review-content">
+          <div class="logo-container">
+            <img src="./Home/Section4/cusomterlogo/luffy.jpg" alt="Customer 1 Logo" class="customer-logo">
+          </div>
+          <div class="review-text">
+            <span class="username">JohnDoe123</span>
+            <div class="stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        <p class="review-body">"GAMEFURY has been a fantastic experience! They always have the latest games, and their customer support is top-notch."</p>
+      </div>
+      <div class="review-box">
+        <div class="review-content">
+          <div class="logo-container">
+            <img src="./Home/Section4/cusomterlogo/Itachi.png" alt="Customer 2 Logo" class="customer-logo">
+          </div>
+          <div class="review-text">
+            <span class="username">SarahGamerX</span>
+            <div class="stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+          </div>
+        </div>
+        <p class="review-body">"I love shopping at GAMEFURY! They always deliver on time and their prices are unbeatable!"</p>
+      </div>
+    </div>
+  </section>
+    
+    
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-left">
+
+        <div class="animated-logo-footer">
+          <video autoplay loop muted class="logo">
+            <source src="./Home/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="gamefury-info">
+          To build a dynamic gaming community, offering top games, accessories and unforgettable experiences.
+        </p>
+        <div class="social-links">
+          <a href="https://facebook.com" class="social-icon"><img src="./Home/Footer/socials/Facebook-icon.png" alt="Facebook"></a>
+          <a href="https://twitter.com" class="social-icon"><img src="./Home/Footer/socials/twitter-icon.png" alt="Twitter"></a>
+          <a href="https://instagram.com" class="social-icon"><img src="./Home/Footer/socials/Instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+
+      <div class="footer-middle">
+        <div class="about-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="community-section">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="social-section">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://discord.com" target="_blank">Discord</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086212707761!2d144.9572287153185!3d-37.817334979751095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb1d5d7768f6d75e!2sFederation%20Square!5e0!3m2!1sen!2s!4v1614763784963!5m2!1sen!2s" 
+            width="430" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  
+
+    <div class="footer-line"></div>
+  
+
+    <div class="footer-info">
+      <div class="footer-lefts">
+        <p>@2025 GameFury | All rights reserved.</p>
+      </div>
+      <div class="footer-rights">
+        <a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="./Home/script.js"></script>
+</body>
+</html>

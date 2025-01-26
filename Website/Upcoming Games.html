@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with Animated Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Upcoming Games/CSS/style-upcomingGames.css">
+  <link rel="stylesheet" href="./Upcoming Games/CSS/mobile-responsive-upcomingGames.css">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="logo">
+
+        <video autoplay loop muted class="animated-logo">
+          <source src="./Upcoming Games/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="login-signup">
+        <button data-tooltip="Existing Users">Login</button>
+        <button data-tooltip="New Users">Sign Up</button>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="navbar">
+      <div class="navbar-item" data-tooltip="Go to Home">
+        <a href="home.html">Home</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Learn more About Us & Contact">
+        <a href="About Us and Contact.html">About Us & Contact</a>
+
+      </div>
+      <div class="navbar-item" data-tooltip="Explore Upcoming Games">
+        <a href="Upcoming Games.html">Upcoming Games</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Shop Consoles & Gaming Peripherals">
+        <a href="consoles&gaming-peripherals.html">Consoles and Gaming Peripherals</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Discover New Games">
+        <a href="Games.html">Games</a></div>
+        <div class="navbar-item" data-tooltip="Find Queries & FAQ">
+          <a href="FAQ.html">Queries & FAQ</a>
+      </div>
+      
+    </div>
+
+    <div class="burger-menu">
+      <button class="burger-icon">☰</button>
+      <div class="burger-list">
+        <button class="close">×</button>
+        <div class="burger-item" onclick="window.location.href='home.html'">Home</div>
+        <div class="burger-item" onclick="window.location.href='About Us and Contact.html'">About Us & Contact</div>
+        <div class="burger-item" onclick="window.location.href='Upcoming Games.html'">Upcoming Games</div>
+        <div class="burger-item" onclick="window.location.href='consoles&gaming-peripherals.html'">Consoles & Gaming Peripherals</div>
+        <div class="burger-item" onclick="window.location.href='Games.html'">Games</div>
+        <div class="burger-item" onclick="window.location.href='FAQ.html'">Queries & FAQ</div>
+      </div>
+    </div>
+    <div class="burger-overlay"></div>
+  </nav>
+  <div id="section-announcement">
+    <h1>Stay ahead with the latest titles</h1>
+    <p>Discover exciting upcoming games and get ready to play</p>
+  </div>
+  <section id="upcoming-games">
+    <div class="header">
+      <img src="./Upcoming Games/star-face.png" alt="Upcoming Games">
+      <h1>Upcoming Games</h1>
+    </div>
+
+    <div class="game-row">
+      <div class="game-box">
+        <img src="./Upcoming Games/game1.jpg" alt="Game 1">
+        <div class="pre-order">Pre-order Now</div>
+        <div class="details">
+          <h3>Dynasty Warriors Origin</h3>
+          <p class="release-date">Release Date: Jan 2025</p>
+        </div>
+      </div>
+      <div class="game-box">
+        <img src="./Upcoming Games/game2.jpg" alt="Game 2">
+        <div class="pre-order">Pre-order Now</div>
+        <div class="details">
+          <h3>Civilization 7</h3>
+          <p class="release-date">Release Date: Feb 2025</p>
+        </div>
+      </div>
+      <div class="game-box">
+        <img src="./Upcoming Games/game3.jpg" alt="Game 3">
+        <div class="pre-order">Pre-order Now</div>
+        <div class="details">
+          <h3>Kingdom Come Deliverance 2</h3>
+          <p class="release-date">Release Date: Feb 2025</p>
+        </div>
+      </div>
+      <div class="game-box">
+        <img src="./Upcoming Games/game4.jpg" alt="Game 4">
+        <div class="pre-order">Pre-order Now</div>
+        <div class="details">
+          <h3>Assassin's Creed Shadows</h3>
+          <p class="release-date">Release Date: Mar 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-row">
+      <div class="game-box">
+        <img src="./Upcoming Games/game5.jpg" alt="Game 5">
+        <div class="pre-order">Pre-order Now</div>
+        <div class="details">
+          <h3>Avowed</h3>
+          <p class="release-date">Release Date: Feb 2025</p>
+        </div>
+      </div>
+      <div class="game-box">
+        <img src="./Upcoming Games/game6.png" alt="Game 6">
+        <div class="pre-order">Pre-order Now</div>
+        <div class="details">
+          <h3>Monster Hunt Wilds</h3>
+          <p class="release-date">Release Date: Feb 2025</p>
+        </div>
+      </div>
+      <div class="game-box">
+        <img src="./Upcoming Games/game7.jpg" alt="Game 7">
+        <div class="pre-order">Pre-order Now</div>
+        <div class="details">
+          <h3>Fatal Fury: City of Wolves</h3>
+          <p class="release-date">Release Date: Apr 2025</p>
+        </div>
+      </div>
+      <div class="game-box">
+        <img src="./Upcoming Games/game8.jpg" alt="Game 8">
+        <div class="pre-order">Pre-order Now</div>
+        <div class="details">
+          <h3>GTA 6</h3>
+          <p class="release-date">Release Date: late 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="upcoming-events">
+    <div class="header">
+      <img src="./Upcoming Games/partypopper.png" alt="Upcoming Events">
+      <h1>Upcoming Events</h1>
+    </div>
+    <div class="events-row">
+      <div class="event-box">
+        <h3>BattleFront 2025: The Ultimate Esports Clash</h3>
+        <p>Date: April 24th 2025</p>
+        <p>Join us on April 12–14, 2025, for a three-day gaming extravaganza! Featuring epic battles in Valorant, Dota 2, FIFA 24, and more, this hybrid event will take place at the Kandy Esports Arena and stream live on Twitch and YouTube. Compete, learn from the pros in workshops, and enjoy exclusive gaming challenges. Don’t miss the action—unleash the gamer within! </p>
+      </div>
+      <div class="event-box">
+        <h3>GameOn Live: The Ultimate Game Show Experience</h3>
+        <p>Date: March 28th 2025</p>
+        <p>Step into the spotlight at GameOn Live, where the thrill of game shows meets the excitement of a live audience! Featuring trivia battles, live challenges, and interactive games, this event brings the public into the action. Compete for prizes, cheer on participants, and enjoy a day filled with laughter, surprises, and unforgettable moments.</p>
+      </div>
+      <div class="event-box">
+        <h3>Play & Connect: A Gaming Meetup</h3>
+        <p>Date: July 3rd 2025</p>
+        <p>Play & Connect is your chance to meet fellow gamers, share your passion, and explore exciting new games in a casual, interactive setting. Whether you're a pro or just starting out, this meetup is all about building friendships and celebrating the gaming community.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div id="subscribe-section">
+      <div class="subscribe-row">
+        <div class="subscribe-left">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Stay updated with the latest offers and news</p>
+        </div>
+        
+        <div class="subscribe-right">
+          <input type="email" placeholder="Enter your email" id="subscribe-email" />
+          <button id="subscribe-btn" class="tooltip" aria-label="Stay updated with the latest offers and news!">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="animated-logo-footer">
+          <video autoplay loop muted class="logo">
+            <source src="./Upcoming Games/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="gamefury-info">
+          To build a dynamic gaming community, offering top games, accessories and unforgettable experiences.
+        </p>
+        <div class="social-links">
+          <a href="https://facebook.com" class="social-icon"><img src="./Upcoming Games/Footer/socials/Facebook-icon.png" alt="Facebook"></a>
+          <a href="https://twitter.com" class="social-icon"><img src="./Upcoming Games/Footer/socials/twitter-icon.png" alt="Twitter"></a>
+          <a href="https://instagram.com" class="social-icon"><img src="./Upcoming Games/Footer/socials/Instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+  
+      <div class="footer-middle">
+        <div class="about-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="community-section">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="social-section">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://discord.com" target="_blank">Discord</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086212707761!2d144.9572287153185!3d-37.817334979751095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb1d5d7768f6d75e!2sFederation%20Square!5e0!3m2!1sen!2s!4v1614763784963!5m2!1sen!2s" 
+            width="430" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  
+    <div class="footer-line"></div>
+  
+    <div class="footer-info">
+      <div class="footer-lefts">
+        <p>@2025 GameFury | All rights reserved.</p>
+      </div>
+      <div class="footer-rights">
+        <a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="./Upcoming Games/script.js"></script>
+</body>
+</html>

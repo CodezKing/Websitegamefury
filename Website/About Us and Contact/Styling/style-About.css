@@ -417,12 +417,15 @@ header {
   margin-bottom: 30px;
 }
 
-#section2 .map-box, .image-box {
+#section2 .map-box, 
+#section2 .image-box {
   width: 100%;
-  height: 300px;
   border: 1px solid black;
   border-radius: 5px;
   overflow: hidden;
+  height: auto;
+  max-height: 100%;
+
 }
 
 #section2 .map-box iframe {
@@ -523,10 +526,12 @@ header {
 #section3 .map-box, 
 #section3 .image-box {
   width: 100%;
-  height: 300px;
   border: 1px solid black;
   border-radius: 5px;
   overflow: hidden;
+  height: auto;
+  max-height: 100%;
+
 }
 
 #section3 .map-box iframe {
@@ -631,10 +636,12 @@ header {
 #section4 .map-box, 
 #section4 .image-box {
   width: 100%;
-  height: 300px;
   border: 1px solid black;
   border-radius: 5px;
   overflow: hidden;
+  height: auto;
+  max-height: 100%;
+
 }
 
 #section4 .map-box iframe {

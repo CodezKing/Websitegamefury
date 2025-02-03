@@ -195,9 +195,24 @@
         transform: rotate(0deg); 
       }
 
-    #section1 {
+       #section1 {
         padding: 40px;
+        grid-template-columns: 1fr; 
       }
+
+      .right {
+        overflow: hidden;
+        width: 100%;
+        display: block;
+      }
+    
+      .right img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; 
+        padding: 10px;
+    }
+
     
       .container {
         display: flex;
@@ -225,6 +240,7 @@
         margin-bottom: 20px;
       }
     
+
       .social-icons {
         display: flex;
         flex-direction: row;
@@ -254,6 +270,7 @@
         border-radius: 8px;
       }
     
+
 
       .branch-content {
         display: flex !important;

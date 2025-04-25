@@ -1,0 +1,159 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+h2 {
+    font-size: 2rem; 
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th,
+table td {
+    padding: 15px; 
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1.2rem; 
+}
+
+table th {
+    background-color: #f8f8f8;
+}
+
+table td {
+    background-color: #fff;
+}
+
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 15px; 
+    margin: 15px 0; 
+    font-size: 1.2rem; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 1rem; 
+    display: block;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 20px; 
+    font-size: 1.4rem; 
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px; 
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.actions {
+    margin-top: 30px;
+}
+
+#success-modal {
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#success-modal h3 {
+    font-size: 2rem; 
+    margin-bottom: 15px;
+}
+
+#success-modal p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#success-modal button {
+    background-color: #ccc;
+    color: #333;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem; 
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+    /* Order Summary Table */
+    table th, table td {
+        font-size: 1.2rem; 
+        padding: 18px; 
+    }
+
+    input[type="text"],
+    textarea {
+        padding: 18px; 
+        font-size: 1.3rem; 
+    }
+
+    button {
+        padding: 22px; 
+        font-size: 1.5rem; 
+    }
+
+    #success-modal {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .error-message {
+        font-size: 1.1rem; 
+    }
+}
+
+@media (max-width: 400px) {
+    /* Further adjustments for very small screens */
+    h2 {
+        font-size: 2rem; 
+    }
+
+    button {
+        font-size: 1.6rem; 
+        padding: 25px; 
+    }
+
+    .error-message {
+        font-size: 1.2rem; 
+    }
+}

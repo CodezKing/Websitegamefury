@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with Animated Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Computer Parts/styling/style-computer.css">
+  <link rel="stylesheet" href="./Computer Parts/styling/style-mobile-responsive.css">
+</head>
+<body>
+  <header>
+    <div class="header-row">
+      <div class="logo">
+        <video autoplay loop muted class="animated-logo">
+          <source src="./Computer Parts/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="login-signup">
+        <button data-tooltip="Existing Users">Login</button>
+        <button data-tooltip="New Users">Sign Up</button>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="navbar">
+      <div class="navbar-item" data-tooltip="Go to Home">
+        <a href="home.html">Home</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Learn more About Us & Contact">
+        <a href="About Us and Contact.html">About Us & Contact</a>
+
+      </div>
+      <div class="navbar-item" data-tooltip="Explore Upcoming Games">
+        <a href="Upcoming Games.html">Upcoming Games</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Shop Consoles & Gaming Peripherals">
+        <a href="consoles&gaming-peripherals.html">Consoles and Gaming Peripherals</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Discover New Games">
+        <a href="Games.html">Games</a></div>
+        <div class="navbar-item" data-tooltip="Find Queries & FAQ">
+          <a href="FAQ.html">Queries & FAQ</a>
+      </div>
+      <div class="navbar-item" data-tooltip="Find all your computer parts here">
+        <a href="Computer parts.html">PC Components</a>
+    </div>
+      
+
+    <div class="burger-menu">
+      <button class="burger-icon">☰</button>
+      <div class="burger-list">
+        <button class="close">×</button>
+        <div class="burger-item" onclick="window.location.href='home.html'">Home</div>
+        <div class="burger-item" onclick="window.location.href='About Us and Contact.html'">About Us & Contact</div>
+        <div class="burger-item" onclick="window.location.href='Upcoming Games.html'">Upcoming Games</div>
+        <div class="burger-item" onclick="window.location.href='consoles&gaming-peripherals.html'">Consoles & Gaming Peripherals</div>
+        <div class="burger-item" onclick="window.location.href='Games.html'">Games</div>
+        <div class="burger-item" onclick="window.location.href='FAQ.html'">Queries & FAQ</div>
+        <div class="burger-item" onclick="window.location.href='Computer parts.html'">PC Components</div>
+      </div>
+    </div>
+    <div class="burger-overlay"></div>
+  </nav>
+  <div id="section-announcement">
+    <h1>Computer Parts</h1>
+    <p>Computer items of the highest quality for you</p>
+  </div>
+<body>
+<div class="cart" id="cart" onclick="toggleCartDropdown()" title="Buy items now and add to the cart">
+      <div class="cart-container">
+          <img src="./Computer Parts/Images/Cart/Cart.jpg" alt="cart">
+          <span class="cart-text">Cart (0)</span>
+      </div>
+  
+      <div id="cart-dropdown" class="cart-dropdown">
+        <h4>Your Cart</h4>
+        <ul id="cart-items"></ul>
+        <div id="cart-total" class="cart-total">Total: $0</div>
+        <div id="cart-message"></div>
+        <div class="cart-buttons">
+          <button onclick="goToCheckout(event)">Buy Now</button>
+          <button onclick="refreshCart(event)">Refresh Cart</button>
+        </div>
+    </div>    
+</div>
+
+  
+  
+<div class="product-item">
+  <div class="container">
+    <h1 class="section-title">Processors</h1>
+      <div class="product-grid">
+            <div class="product-item">
+                <div class="product-label">Best Seller</div>
+                <img src="./Computer Parts/Images/Processors/AMD.png" alt="Processor">
+                <h3>AMD Ryzen 5 9600X Processor</h3>
+                
+                <div class="product-bottom">
+                  <p>$300</p>
+                  <div class="quantity-container">
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" value="1" min="1">
+                  </div>
+                <button onclick="addToCart('AMD Ryzen 5 9600X', 300, 1)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-item">
+              <div class="product-label">Powerful</div>
+              <img src="./Computer Parts/Images/Processors/AMD Ryzen 7.webp" alt="Processor">
+              <h3>AMD Ryzen 7 9700X</h3>
+                <div class="product-bottom">
+                <p>$500</p>
+                <div class="quantity-container">
+                  <label for="quantity2">Quantity:</label>
+                  <input type="number" id="quantity2" value="1" min="1">
+                </div>
+                <button onclick="addToCart('AMD Ryzen 7 9700X', 500, 2)">Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-item">
+              <div class="product-label">Best Seller</div>
+              <img src="./Computer Parts/Images/Processors/AMD3.png" alt="Processor">
+              <h3>AMD RYZEN 5 4600G Desktop Processor (Systems Only)</h3>
+              <div class="product-bottom">
+              <p>$450</p>
+              <div class="quantity-container">
+                <label for="quantity3">Quantity:</label>
+                <input type="number" id="quantity3" value="1" min="1">
+              </div>
+              <button onclick="addToCart('AMD RYZEN 5 4600G', 450, 3)">Add to Cart</button>
+          </div>
+        </div>
+          <div class="product-item">
+              <img src="./Computer Parts/Images/Processors/AMD3.png" alt="Processor">
+              <h3>AMD Ryzen 7 5700G 3.9 GHz 8 Core AM4 Processor</h3>
+              <div class="product-bottom">
+              <p>$400</p>
+              <div class="quantity-container">
+                <label for="quantity4">Quantity:</label>
+                <input type="number" id="quantity4" value="1" min="1">
+              </div>
+              <button onclick="addToCart('AMD Ryzen 7 5700G', 400, 4)">Add to Cart</button>
+          </div>
+        </div>
+          <div class="product-item">
+            <div class="product-label">Powerful</div>
+            <img src="./Computer Parts/Images/Processors/Intel9-14900K.png" alt="Processor">
+            <h3>INTEL CORE I9 14900K (36M CACHE, UP TO 6.00 GHZ)</h3>
+            <div class="product-bottom">
+            <p>$490</p>
+            <div class="quantity-container">
+              <label for="quantity5">Quantity:</label>
+              <input type="number" id="quantity5" value="1" min="1">
+            </div>
+            <button onclick="addToCart('INTEL CORE I9 14900K', 490, 1)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <div class="product-label">Best Seller</div>
+            <img src="./Computer Parts/Images/Processors/intel7.png" alt="Processor">
+            <h3>INTEL CORE I7 12700 (25M CACHE, UP TO 4.90)</h3>
+            <div class="product-bottom">
+            <p>$269</p>
+            <div class="quantity-container">
+              <label for="quantity6">Quantity:</label>
+              <input type="number" id="quantity6" value="1" min="1">
+            </div>
+            <button onclick="addToCart('INTEL CORE I7 12700', 269, 2)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <div class="product-label">Best Seller</div>
+            <img src="./Computer Parts/Images/Processors/intel5.png" alt="Processor">
+            <h3>INTEL CORE I5-12400F (18M CACHE, UP TO 4.40 GHZ)</h3>
+            <div class="product-bottom">
+            <p>$115</p>
+            <div class="quantity-container">
+              <label for="quantity7">Quantity:</label>
+              <input type="number" id="quantity7" value="1" min="1">
+            </div>
+            <button onclick="addToCart('INTEL CORE I5-12400F', 115, 3)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Processors/intel5.png" alt="Processor">
+            <h3>INTEL CORE I3 14100 (12M CACHE, UP TO 4.70 GHZ)</h3>
+            <div class="product-bottom">
+            <p>$132</p>
+            <div class="quantity-container">
+              <label for="quantity8">Quantity:</label>
+              <input type="number" id="quantity8" value="1" min="1">
+            </div>
+            <button onclick="addToCart('INTEL CORE I3 14100', 132, 4)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <h1 class="section-title"> Graphic Cards</h1>
+      <div class="product-grid">
+          <div class="product-item">
+              <div class="product-label">Best Seller</div>
+              <img src="./Computer Parts/Images/Graphic cards/AORUS-GeForce-RTX-4060-Ti-ELITE-8G-sri-lanka.webp" alt="Graphics Card">
+              <h3>AORUS GeForce RTX™ 4060 Ti ELITE 8G</h3>
+              <div class="product-bottom">
+              <p>$600</p>
+              <div class="quantity-container">
+                <label for="quantity9">Quantity:</label>
+                <input type="number" id="quantity10" value="1" min="1">
+              </div>
+              <button onclick="addToCart('Graphics Card', 600, 1)">Add to Cart</button>
+          </div>
+        </div>
+          <div class="product-item">
+              <div class="product-label">Best Seller</div>
+              <img src="./Computer Parts/Images/Graphic cards/GeForce-RTX-4080-SUPER-WINDFORCE-V2-16G-01.webp" alt="Graphics Card">
+              <h3>GeForce RTX™ 4080 SUPER WINDFORCE 16G</h3>
+              <div class="product-bottom">
+              <p>$700</p>
+              <div class="quantity-container">
+                <label for="quantity11">Quantity:</label>
+                <input type="number" id="quantity11" value="1" min="1">
+              </div>
+              <button onclick="addToCart('Graphics Card', 700, 2)">Add to Cart</button>
+          </div>
+        </div>
+          <div class="product-item">
+              <img src="./Computer parts/Images/Graphic cards/Gigabyte-GeForce-RTX-4070-SUPER-Gaming-OC-12G.jpg" alt="Graphics Card">
+              <h3>GeForce RTX™ 4070 SUPER GAMING OC 12G</h3>
+              <div class="product-bottom">
+              <p>$550</p>
+              <div class="quantity-container">
+                <label for="quantity12">Quantity:</label>
+                <input type="number" id="quantity12" value="1" min="1">
+              </div>
+              <button onclick="addToCart('Graphics Card', 530, 3)">Add to Cart</button>
+          </div>
+        </div>
+          <div class="product-item">
+              <img src="./Computer Parts/Images/Graphic cards/GigabyteRTX5090AORUS.png" alt="Graphics Card">
+              <h3>AORUS GeForce RTX™ 5090 MASTER 32G</h3>
+              <div class="product-bottom">
+              <p>$700</p>
+              <div class="quantity-container">
+                <label for="quantity13">Quantity:</label>
+                <input type="number" id="quantity13" value="1" min="1">
+              </div>
+              <button onclick="addToCart('Graphics Card', 700, 4)">Add to Cart</button>
+          </div>
+        </div>
+          <div class="product-item">
+            <img src="./Computer Parts/Images/Graphic cards/palit_gtx_1660ti_dual_6gb_gddr6_vga1_1.webp" alt="Graphics Card">
+            <h3>PALIT GeForce GTX 1660 Ti DUAL – 6GB GDDR6 Graphics Card</h3>
+            <div class="product-bottom">
+            <p>$300</p>
+            <div class="quantity-container">
+              <label for="quantity14">Quantity:</label>
+              <input type="number" id="quantity14" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Graphics Card', 300, 1)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Graphic cards/XLR8-RTX-3070-Ti-EPIC-X-Triple-Fan-P-gr.webp" alt="Graphics Card">
+            <h3>PNY GeForce RTX 3070 Ti 8GB XLR8 Gaming REVEL™ EPIC-X RGB™ Triple Fan</h3>
+            <div class="product-bottom">
+            <p>$400</p>
+            <div class="quantity-container">
+              <label for="quantity15">Quantity:</label>
+              <input type="number" id="quantity15" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Graphics Card', 400, 2)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <img src="./Computer parts/Images/Graphic cards/RTX4070 super windforce max.jpg" alt="Graphics Card">
+            <h3>GeForce RTX™ 4070 SUPER WINDFORCE OC 12G (rev. 1.0)</h3>
+            <div class="product-bottom">
+            <p>$400</p>
+            <div class="quantity-container">
+              <label for="quantity16">Quantity:</label>
+              <input type="number" id="quantity16" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Graphics Card', 400, 3)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Graphic cards/GTX1650.png" alt="Graphics Card">
+            <h3>ASUS GeForce GTX 1650 Dual OC 4Gb Graphic Card</h3>
+            <div class="product-bottom">
+            <p>$220</p>
+            <div class="quantity-container">
+              <label for="quantity17">Quantity:</label>
+              <input type="number" id="quantity17" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Graphics Card', 220, 4)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="section-title">Motherboards</h1>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Motherboards/ASUS ROG STRIX B860-A GAMING WIFI DDR5.png" alt="Motherboards">
+            <h3>ASUS ROG STRIX B860-A GAMING WIFI DDR5</h3>
+            <div class="product-bottom">
+            <p>$354</p>
+            <div class="quantity-container">
+              <label for="quantity18">Quantity:</label>
+              <input type="number" id="quantity18" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Motherboards', 354, 1)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Motherboards/ASUS TUF GAMING Z890-PRO WIFI.png" alt="Motherboards">
+            <h3>ASUS TUF GAMING Z890-PRO WIFI</h3>
+            <div class="product-bottom">
+            <p>$500</p>
+            <div class="quantity-container">
+              <label for="quantity18">Quantity:</label>
+              <input type="number" id="quantity18" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Motherboards', 500, 2)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <div class="product-label">Best Seller</div>
+            <img src="./Computer Parts/Images/Motherboards/COLORFUL CVN B650 FROZEN V14.png" alt="Motherboards">
+            <h3>COLORFUL CVN B650 FROZEN V14</h3>
+            <div class="product-bottom">
+            <p>$165</p>
+            <div class="quantity-container">
+              <label for="quantity19">Quantity:</label>
+              <input type="number" id="quantity19" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Motherboards', 165, 3)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Motherboards/MSI A520M-A PRO.png" alt="Motherboards">
+            <h3>MSI A520M-A PRO</h3>
+            <div class="product-bottom">
+            <p>$200</p>
+            <div class="quantity-container">
+              <label for="quantity20">Quantity:</label>
+              <input type="number" id="quantity20" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Motherboards', 200, 4)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+          <img src="./Computer Parts/Images/Motherboards/MSI MAG X870 TOMAHAWK WIFI.png" alt="Motherboards">
+          <h3>MSI MAG X870 TOMAHAWK WIFI</h3>
+          <div class="product-bottom">
+          <p>$483</p>
+          <div class="quantity-container">
+            <label for="quantity21">Quantity:</label>
+            <input type="number" id="quantity21" value="1" min="1">
+          </div>
+          <button onclick="addToCart('Motherboards', 483, 4)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+          <div class="product-label">Best Seller</div>
+          <img src="./Computer Parts/Images/Motherboards/MSI PRO B650M-P.png" alt="Motherboards">
+          <h3>MSI PRO B650M-P</h3>
+          <div class="product-bottom">
+          <p>$163</p>
+          <div class="quantity-container">
+            <label for="quantity22">Quantity:</label>
+            <input type="number" id="quantity22" value="1" min="1">
+          </div>
+          <button onclick="addToCart('Motherboards', 163, 4)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Motherboards/MSI PRO H610M-E DDR5.png" alt="Motherboards">
+        <h3>MSI H610M-E Pro DDR5 Motherboard</h3>
+        <div class="product-bottom">
+        <p>$103</p>
+        <div class="quantity-container">
+          <label for="quantity23">Quantity:</label>
+          <input type="number" id="quantity23" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Motherboards', 103, 4)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Motherboards/MSI Z790.png" alt="Motherboards">
+        <h3>PRO Z790-A WIFI</h3>
+        <div class="product-bottom">
+        <p>$299</p>
+        <div class="quantity-container">
+          <label for="quantity24">Quantity:</label>
+          <input type="number" id="quantity24" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Motherboards', 299, 4)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+    <h1 class="section-title">Memory (RAM)</h1>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Memory (RAM)/2Corsair Vengeance LPX DDR4 3200Mhz (8GB-16GB) SINGLE.png" alt="Memory (RAM)">
+            <h3>VENGEANCE® LPX 16GB (2 x 8GB) DDR4 DRAM 3200MHz C16 Memory Kit</h3>
+            <div class="product-bottom">
+            <p>$43</p>
+            <div class="quantity-container">
+              <label for="quantity25">Quantity:</label>
+              <input type="number" id="quantity25" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Memory (RAM)', 43, 1)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <div class="product-label">Best Seller</div>
+            <img src="./Computer Parts/Images/Memory (RAM)/ADATA DDR5 32GB 5600MHZ LAPTOP Ram.png" alt="Memory (RAM)">
+            <h3>ADATA 32GB 5600MHz DDR5 NoteBook RAM</h3>
+            <div class="product-bottom">
+            <p>$95</p>
+            <div class="quantity-container">
+              <label for="quantity26">Quantity:</label>
+              <input type="number" id="quantity26" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Memory (RAM)', 95, 2)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Memory (RAM)/CORSAIR DOMINATOR TITANIUM RGB 64GB (2X32GB) DDR5 6400MHZ - Intel XMP.png" alt="Memory (RAM)">
+            <h3>CORSAIR DOMINATOR TITANIUM RGB 64GB (2X32GB) DDR5 6400MHZ</h3>
+            <div class="product-bottom">
+            <p>$355</p>
+            <div class="quantity-container">
+              <label for="quantity27">Quantity:</label>
+              <input type="number" id="quantity27" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Memory (RAM)', 355, 3)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+            <img src="./Computer Parts/Images/Memory (RAM)/CORSAIR VENGEANCE DDR5 5600MHz - Intel (16GB & 32GB) Single RAM.png" alt="Memory (RAM)">
+            <h3>CORSAIR VENGEANCE DDR5 5600MHz - Intel (16GB & 32GB) Single RAM</h3>
+            <div class="product-bottom">
+            <p>$58</p>
+            <div class="quantity-container">
+              <label for="quantity28">Quantity:</label>
+              <input type="number" id="quantity28" value="1" min="1">
+            </div>
+            <button onclick="addToCart('Memory (RAM)', 58, 4)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+          <img src="./Computer Parts/Images/Memory (RAM)/Corsair Vengeance LPX DDR4 3200Mhz (8GB-16GB) SINGLE.png" alt="Memory (RAM)">
+          <h3>CORSAIR VENGEANCE DDR5 5600MHz - Intel (16GB & 32GB) Single RAM</h3>
+          <div class="product-bottom">
+          <p>$25</p>
+          <div class="quantity-container">
+            <label for="quantity29">Quantity:</label>
+            <input type="number" id="quantity29" value="1" min="1">
+          </div>
+          <button onclick="addToCart('Memory (RAM)', 25, 4)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+          <img src="./Computer Parts/Images/Memory (RAM)/G.SKILL TridentZ5 RGB 32GB (2 x 16GB) DDR5 5600Mhz Silver - Intel.png" alt="Memory (RAM)">
+          <h3>CORSAIR VENGEANCE DDR5 5600MHz - Intel (16GB & 32GB) Single RAM</h3>
+          <p>$155</p>
+          <div class="quantity-container">
+            <label for="quantity30">Quantity:</label>
+            <input type="number" id="quantity31" value="1" min="1">
+          </div>
+          <button onclick="addToCart('Memory (RAM)', 155, 4)">Add to Cart</button>
+        </div>
+        <div class="product-item">
+          <img src="./Computer Parts/Images/Memory (RAM)/TEAM T-CREATE EXPERT (64GB-96GB) KIT 6400Mhz.png" alt="Memory (RAM)">
+          <h3>TEAM T-CREATE EXPERT (64GB-96GB) KIT 6400Mhz</h3>
+          <div class="product-bottom"></div>
+          <p>$264</p>
+          <div class="quantity-container">
+            <label for="quantity32">Quantity:</label>
+            <input type="number" id="quantity32" value="1" min="1">
+          </div>
+          <button onclick="addToCart('Memory (RAM)', 264, 4)">Add to Cart</button>
+        </div>
+      </div>
+        <div class="product-item">
+          <img src="./Computer Parts/Images/Memory (RAM)/TEAM TFORCE DELTA RGB 5600MHZ - INTEL (16GB-32GB) KIT.png" alt="Memory (RAM)">
+          <h3>CORSAIR VENGEANCE DDR5 5600MHz - Intel (16GB & 32GB) Single RAM</h3>
+          <div class="product-bottom">
+          <p>$133</p>
+          <div class="quantity-container">
+            <label for="quantity33">Quantity:</label>
+            <input type="number" id="quantity33" value="1" min="1">
+          </div>
+          <button onclick="addToCart('Memory (RAM)', 133, 4)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="section-title">Storage Devices</h1>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Storage Devices/128GB-Kingston-DataTraveler-Exodia-Onyx-USB-3.2-Pen-Drive.webp" alt="Memory (RAM)">
+        <h3>VENGEANCE® LPX 16GB (2 x 8GB) DDR4 DRAM 3200MHz C16 Memory Kit</h3>
+        <div class="product-bottom">
+        <p>$11</p>
+        <div class="quantity-container">
+          <label for="quantity5">Quantity:</label>
+          <input type="number" id="quantity5" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Memory (RAM)', 11, 1)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Storage Devices/1TB Lexar NM620 PCIe Gen 3×4 M.2 NVME SSD.webp" alt="Memory (RAM)">
+        <h3>LEXAR NM620 NVMe PCIe Gen3 X4 2280 1TB M.2 NVME SSD ( 3 YEARS WARRANTY )</h3>
+        <div class="product-bottom">
+        <p>$61</p>
+        <div class="quantity-container">
+          <label for="quantity5">Quantity:</label>
+          <input type="number" id="quantity5" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Memory (RAM)', 61, 1)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Storage Devices/1TB OSCOO ON900 PCI Gen 3×4 M.2 NVMe SSD.webp" alt="Memory (RAM)">
+        <h3>1TB OSCOO ON900 PCI Gen 3×4 M.2 NVMe SSD</h3>
+        <div class="product-bottom">
+        <p>$85</p>
+        <div class="quantity-container">
+          <label for="quantity5">Quantity:</label>
+          <input type="number" id="quantity5" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Memory (RAM)', 85, 1)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Storage Devices/1TB Transcend – 25H3 Storejet USB 3.1 Portable Hard Drive.webp" alt="Memory (RAM)">
+        <h3>VENGEANCE® LPX 16GB (2 x 8GB) DDR4 DRAM 3200MHz C16 Memory Kit</h3>
+        <div class="product-bottom">
+        <p>$77</p>
+        <div class="quantity-container">
+          <label for="quantity5">Quantity:</label>
+          <input type="number" id="quantity5" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Memory (RAM)', 77, 1)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Storage Devices/1TB-Kingston-NV3-PCIe-4x4-M.2-NVMe-SSD.webp" alt="Memory (RAM)">
+        <h3>NV3 NVMe PCIe Gen 4.0 SSD</h3>
+        <div class="product-bottom">
+        <p>$53</p>
+        <div class="quantity-container">
+          <label for="quantity5">Quantity:</label>
+          <input type="number" id="quantity5" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Memory (RAM)', 53, 1)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Storage Devices/256GB-Kingston-DataTraveler-Exodia-M-USB-3.2-Pen-Drive.webp" alt="Memory (RAM)">
+        <h3>Kingston DataTraveler Exodia M USB 3.2 Flash Drive | DTXM</h3>
+        <div class="product-bottom">
+        <p>$27</p>
+        <div class="quantity-container">
+          <label for="quantity5">Quantity:</label>
+          <input type="number" id="quantity5" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Memory (RAM)', 27, 1)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Storage Devices/2TB SEAGATE BARRACUDA – 3.5″ SATA 3.0 7200RPM Internal Desktop Hard Disk Drive.webp" alt="Memory (RAM)">
+        <h3>2TB SEAGATE BARRACUDA – 3.5″ SATA 3.0 7200RPM Internal Desktop Hard Disk Drive</h3>
+        <div class="product-bottom">
+        <p>$27</p>
+        <div class="quantity-container">
+          <label for="quantity5">Quantity:</label>
+          <input type="number" id="quantity5" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Memory (RAM)', 27, 1)">Add to Cart</button>
+      </div>
+    </div>
+      <div class="product-item">
+        <img src="./Computer Parts/Images/Storage Devices/2TB-WESTERN-DIGITAL-WD-PURPLE-3.5-SATA-3.0-Internal-Desktop-Hard-Disk-Drive.webp" alt="Memory (RAM)">
+        <h3>2TB WESTERN DIGITAL WD PURPLE 3.5″ SATA 3.0 Internal Desktop Hard Disk Drive</h3>
+        <div class="product-bottom">
+        <p>$71</p>
+        <div class="quantity-container">
+          <label for="quantity5">Quantity:</label>
+          <input type="number" id="quantity5" value="1" min="1">
+        </div>
+        <button onclick="addToCart('Memory (RAM)', 71, 1)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div id="checkout-page" style="display:none;">
+        <h2>Order Summary</h2>
+        <table id="order-summary">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="order-body"></tbody>
+        </table>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+            <label for="payment">Payment Info:</label>
+            <input type="text" id="payment" required>
+            <button onclick="completePurchase()">Pay</button>
+        </div>
+        <button onclick="addToFavorites()">Add to Favorites</button>
+        <button onclick="applyFavorites()">Apply Favourites</button>
+    </div>
+
+    <script src="./Computer Parts/cart.js"></script>
+</body>
+  
+ 
+<footer>
+    <div class="footer-container">
+
+      <div class="footer-left">
+
+        <div class="animated-logo-footer">
+          <video autoplay loop muted class="logo">
+            <source src="./Home/logo/GAMEFURYLOGO.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="gamefury-info">
+          To build a dynamic gaming community, offering top games, accessories and unforgettable experiences.
+        </p>
+        <div class="social-links">
+          <a href="https://facebook.com" class="social-icon"><img src="./Home/Footer/socials/Facebook-icon.png" alt="Facebook"></a>
+          <a href="https://twitter.com" class="social-icon"><img src="./Home/Footer/socials/twitter-icon.png" alt="Twitter"></a>
+          <a href="https://instagram.com" class="social-icon"><img src="./Home/Footer/socials/Instagram-icon.png" alt="Instagram"></a>
+        </div>
+      </div>
+
+
+      <div class="footer-middle">
+        <div class="about-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Our Mission</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="community-section">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="social-section">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://discord.com" target="_blank">Discord</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086212707761!2d144.9572287153185!3d-37.817334979751095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb1d5d7768f6d75e!2sFederation%20Square!5e0!3m2!1sen!2s!4v1614763784963!5m2!1sen!2s" 
+            width="430" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      
+    </div>
+  
+
+    <div class="footer-line"></div>
+  
+
+    <div class="footer-info">
+      <div class="footer-lefts">
+        <p>@2025 GameFury | All rights reserved.</p>
+      </div>
+      <div class="footer-rights">
+        <a href="#">Privacy & Policy</a> | <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+</footer>
+  
+  <script src="cart.js" defer></script>
+  <script src="./Home/script.js"></script>
+</body>
+</html>

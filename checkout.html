@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./Computer Parts/styling/style-checkout.css">
+    <link rel="stylesheet" href="./Computer Parts/styling/style-mobile-checkout.css">
+</head>
+<body>
+    
+
+    <!-- Success Modal -->
+<div id="success-modal">
+    <h3>🎉 Thank you for your purchase!</h3>
+    <p>Your order was successfully placed.</p>
+    <p class="delivery-date"></p> <!-- This will display the delivery date -->
+    <button onclick="addToFavorites()">⭐ Add to Favourites</button>
+    <button onclick="applyFavorites()">📥 Apply Favourites</button>
+    <br>
+    <button class="close" onclick="closeModal()">Close</button>
+</div>
+
+
+    <h2>Order Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Component</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="order-body"></tbody>
+    </table>
+
+    <h2>Personal & Delivery Details</h2>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <span id="name-error" class="error-message"></span>
+
+    <textarea id="address" placeholder="Delivery Address"></textarea>
+    <span id="address-error" class="error-message"></span>
+
+    <input type="text" id="payment" placeholder="Payment Info (Card Number)">
+    <span id="payment-error" class="error-message"></span>
+
+    <div class="actions">
+        <button onclick="completePurchase()">Pay</button>
+        <button onclick="addToFavorites()">Add to Favourite</button>
+        <button onclick="applyFavorites()">Apply Favourites</button>
+    </div>
+
+    <script src="./Computer Parts/checkout.js" defer></script>
+</body>
+</html>
